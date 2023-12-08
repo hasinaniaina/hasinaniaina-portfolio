@@ -63,6 +63,21 @@ function checkActiveClass() {
     return menu_actived;
 }
 
+function animateHeroSection() {
+    var developpeurFullstackSection = document.querySelector('.head-content-container');
+    var ImageRightSection           = document.querySelector('.svg-content');
+    var menuSection                 = document.querySelector('#portfolio-menu');
+    var menuHolder                  = document.querySelector('#menu-holder');
+
+    const timelime = new TimelineMax();
+
+    timelime.fromTo(ImageRightSection, 3, {right: "-100%"}, {right: "0", ease: Power2.easeInOut})
+    .fromTo(developpeurFullstackSection, 1.5, {x: "-100%"}, {x: "0%"})
+    .fromTo(menuSection, 2, {height: "100vh", y: "0%"}, {height: "25vh", y: "70vh"})
+    .fromTo(menuHolder, 1, {y: "200%", opacity: 0}, {y: "0%", opacity: 1})
+}
+
 
 
 launchLocomotive();
+animateHeroSection();

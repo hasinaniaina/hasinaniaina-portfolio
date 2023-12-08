@@ -40,11 +40,41 @@ html, body, .container {
 
 .container .content-holder  nav{
 	position: absolute;
-    top: 93vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-	z-index: 1;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
+	left:-17px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0, 0.5);
+    padding: 19px 16px;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
 }
+
+.container .content-holder nav .logo-container img {
+	width: 39px;
+    border: solid 1px;
+    border-radius: 50%;
+    padding: 10px 20px;
+    margin-bottom: 23px;
+	animation: logoEffect 4s ease-in-out infinite;
+	transition: all 2s ease-in-out;
+}
+
+@keyframes logoEffect {
+	0% {
+		box-shadow: rgba(215, 215, 215, 0.35) 0px 3px 5px
+	}
+	50% {
+		box-shadow: rgba(215, 215, 215, 0.35) 0px 4px 10px
+	}
+	100% {	
+		box-shadow: rgba(215, 215, 215, 0.35) 0px 5px 15px;
+	}
+}
+
 
 @media screen and (max-width:504px) {
 	.container .content-holder  nav {
@@ -54,6 +84,7 @@ html, body, .container {
 
 .container .content-holder  nav ul {
 	display: flex;
+	opacity: 0;
 }
 
 .container .content-holder  nav ul li {
@@ -80,6 +111,8 @@ html, body, .container {
 .container .content-holder  nav ul li.nav-active::after {
 	content: "/>";
 }
+
+
 
 @keyframes activeMenu {
 	from {
@@ -110,21 +143,14 @@ html, body, .container {
 	position: relative;
 }
 
-.container .content-holder .header .logo-container{
-    padding: 56px 0px;
-}
-
-.container .content-holder .header .logo p {
-    font-size: 31px;
-    font-weight: bold;
-}
-
 
 .container .content-holder .header .head-content-container {
-	height: calc(100% - 159px);
+	height: 100%;
     display: flex;
-	position: relative;
-	align-items: center;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
 }
 
 .container .content-holder .header .head-content-container .title-content{
@@ -134,10 +160,14 @@ html, body, .container {
 }
 
 @media screen  and (max-width:917px) {
+	.container .content-holder .header .head-content-container {
+		justify-content: center;
+	}
 	.container .content-holder .header .head-content-container .title-content {
 		width: 52%;
 		padding: 20px;
 		background: rgba(0,0,0, 0.7);
+		text-align: center;
 	}
 }
 
@@ -154,6 +184,11 @@ html, body, .container {
     font-weight: bold;
 	margin-bottom: 41px;
 	line-height: 42px;
+	text-shadow: 4px 0px 1px #999999;
+}
+
+.container .content-holder .header .head-content-container .title-content p:last-child {
+	color: #757373;
 }
 
 @media  screen and (max-width:398px) {
@@ -164,11 +199,12 @@ html, body, .container {
 
 .container .content-holder .header .head-content-container .svg-content {
 	position: absolute;
-	max-width: 1101px;
+    max-width: 1101px;
+    min-width: 750px;
     width: 82%;
-    right: -80px;
+    right: 0;
     z-index: 1;
-    bottom: -96px;
+    top: -81px;
 }
 
 
@@ -247,7 +283,7 @@ html, body, .container {
 }
 
 .container .content-holder .about .title {
-	width: 400px;
+	width: 557px;
 	position: relative;
 	z-index: 2;
 }
@@ -257,7 +293,7 @@ html, body, .container {
     font-weight: bold;
     margin-bottom: 20px;
     line-height: 51px;
-	text-shadow: 4px 0px 7px #999999;
+	text-shadow: 4px 0px 1px #999999;
 }
 
 
@@ -270,6 +306,22 @@ html, body, .container {
 
 .container .content-holder .about .title p {
 	color: #c3c3c3;
+}
+
+.container .content-holder .about .title a {
+	text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border: solid;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.container .content-holder .about .title a:hover {
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
 }
 
 
