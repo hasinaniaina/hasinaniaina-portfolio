@@ -655,6 +655,7 @@ body {
 	text-align: left;
 	padding-left: 10px;
 	width: 400px;
+	padding: 32px;
 }
 
 
@@ -738,6 +739,10 @@ body {
 	width: 432px;
 }
 
+#projects-section #project-item-container .project-item.fifth-project .project-wrapper .right-content img {
+	width: 195px;
+}
+
 @media screen and (max-width: 477px) {
 	#projects-section #project-item-container .project-item.first-project .project-wrapper .right-content img,
 	.project-item.second-project .project-wrapper .left-content img,
@@ -745,6 +750,10 @@ body {
 	.project-item.fourth-project .project-wrapper .left-content img,
 	.project-item.fifth-project .project-wrapper .right-content img {
 		width: 320px;
+	}
+
+	#projects-section #project-item-container .project-item.fifth-project .project-wrapper .right-content img {
+		width: 195px;
 	}
 }
 

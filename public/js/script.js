@@ -74,6 +74,7 @@ function handleSectionMenuActive(id, scroll_y) {
     }
 
 
+
     var menu_id = id.split("-")[0] + "-menu";
     var menu_item = document.getElementById(menu_id);
 
@@ -82,7 +83,8 @@ function handleSectionMenuActive(id, scroll_y) {
     var section_height = all_section_limit[id];
     var bottom_section = (section_height - window_height) - (window_height / 2);
     var top_section = (id.indexOf("contact") == -1) ? (section_height - (window_height / 2) + project_section_width) : section_height - (window_height / 2) ;
-
+    
+    
     
     if (bottom_section < scroll_y && scroll_y < top_section) {
         menu_actived.classList.remove(nav_active_class);
