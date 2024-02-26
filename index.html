@@ -5,31 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="public/css/locomitiveScroll.css">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="public/css/locomitiveScroll.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
-    <div class="container">
-        <div data-scroll-container="" class="content-holder" id="scroll-container">
-            <nav id="portfolio-menu">
-                <div class="logo-container">
-                    <div class="logo">
-                        <img src="public/images/logo.png" alt="">
-                    </div>
+    <!-- <div class="container"> -->
+    <div data-scroll-container="" class="content-holder" id="scroll-container">
+        <nav id="portfolio-menu">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="public/images/logo.png" alt="">
                 </div>
-                <ul id="menu-holder">
-                    <li class="menu nav-active" id="home-menu"><a href="#home-section" data-scroll-to>Accueil</a></li>
-                    <li class="menu" id="about-menu"><a href="#about-section" data-scroll-to>A propos</a></li>
-                    <li class="menu" id="skills-menu"><a href="#skills-section" data-scroll-to>Expériences</a></li>
-                    <li class="menu" id="services-menu"><a href="#services-section" data-scroll-to>Services</a></li>
-                    <li class="menu" id="contact-menu"><a href="#contact-section" data-scroll-to>Contact</a></li>
-                </ul>
-            </nav>
+            </div>
+            <ul id="menu-holder">
+                <li class="menu nav-active" id="home-menu"><a href="#home-section" data-scroll-to>Accueil</a></li>
+                <li class="menu" id="about-menu"><a href="#about-section" data-scroll-to>A propos</a></li>
+                <li class="menu" id="skills-menu"><a href="#skills-section" data-scroll-to>Expériences</a></li>
+                <li class="menu" id="services-menu"><a href="#services-section" data-scroll-to>Services</a></li>
+                <li class="menu" id="projects-menu"><a href="#projects-section" data-scroll-to>Projets</a></li>
+                <li class="menu" id="contact-menu"><a href="#contact-section" data-scroll-to>Contact</a></li>
+            </ul>
+        </nav>
 
-            <section data-scroll-section class="header section-section" id="home-section">
+        <section data-scroll-section class="header section-section" id="home-section">
+            <div class="content-wrapper">
                 <div class="head-content-container">
                     <div data-scroll="" data-scroll-speed="2" class="title-content">
                         <p>Développeur FullStack</p>
@@ -2618,17 +2620,18 @@
                         </g>
                     </svg>
                 </div>
-            </section>
+            </div>
+        </section>
 
-
-            <section data-scroll-section="" class="about section-section" id="about-section">
-                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" class="title">
+        <section data-scroll-section="" class="about section-section" id="about-section">
+            <div class="content-wrapper">
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="title">
                     <h2>Hello World, Je suis Hasina, Développeur Web</h2>
                     <p>Frontend / Backend Développeur</p>
                     <a href="https://drive.google.com/file/d/1cptCgxPNZ5rFoGzcd0k2oOhzhxYi_b6b/view?usp=drive_link"
                         tabindex="_blank">Télécharger mon CV</a>
                 </div>
-                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="5" class="about-content">
+                <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="about-content">
                     <ul>
                         <li>Professionnellement connecté avec l'industrie du développement Web.</li>
                         <li>
@@ -2778,9 +2781,11 @@
                         </g>
                     </svg>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section data-scroll-section="" class="skills-experiences section-section" id="skills-section">
+        <section data-scroll-section="" class="skills-experiences section-section" id="skills-section">
+            <div class="content-wrapper">
                 <div data-scroll data-scroll-speed="10" class="all-container">
                     <h2>Expériences</h2>
                     <p>
@@ -2987,9 +2992,11 @@
                         </g>
                     </svg>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section data-scroll-section="" class="services section-section" id="services-section">
+        <section data-scroll-section="" class="services section-section" id="services-section">
+            <div class="content-wrapper">
                 <h2 data-scroll="" data-scroll-speed="2">Services</h2>
                 <div class="items-holder">
                     <div data-scroll="" data-scroll-speed="1" class="service-item-container text-left-icon-right">
@@ -3179,9 +3186,112 @@
                         </g>
                     </svg>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section data-scroll-section="" class="contact section-section" id="contact-section">
+
+        <section data-scroll-section="" class="projects section-section" id="projects-section">
+            <div class="content-wrapper project-item-container" id="project-item-container">
+                <div class="project-item project-intro">
+                    <h2>Projets</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet explicabo saepe quas labore dicta quod vitae id rem nesciunt, vero qui maiores maxime aliquam ullam blanditiis dolor dolorum eum in.</p>
+                </div>
+                <div class="project-item first-project">
+                    <div class="project-wrapper">
+                        <div class="left-content">
+                            <div class="title">
+                                <h5>OneCrm</h5>
+                            </div>
+                            <div class="description">
+                                <p>>&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <div class="built-with">
+                                <p><span>Built with:&nbsp;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex culpa quasi a quibusdam. Iusto rerum sint pariatur quaerat? Praesentium magni, veniam eveniet impedit molestias eum exercitationem ipsa labore. Nam, modi.</p>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <img src="https://dvlpr.pro/macbook.png" alt="OneCrm image">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item second-project">
+                    <div class="project-wrapper">
+                        <div class="left-content">
+                            <img src="https://dvlpr.pro/macbook.png" alt="OneCrm image">
+                        </div>
+                        <div class="right-content">
+                            <div class="title">
+                                <h5>ToDo list</h5>
+                            </div>
+                            <div class="description">
+                                <p>>&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <div class="built-with">
+                                <p><span>Built with:&nbsp;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex culpa quasi a quibusdam. Iusto rerum sint pariatur quaerat? Praesentium magni, veniam eveniet impedit molestias eum exercitationem ipsa labore. Nam, modi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item third-project">
+                    <div class="project-wrapper">
+                        <div class="left-content">
+                            <div class="title">
+                                <h5>Noela Portfolio</h5>
+                            </div>
+                            <div class="description">
+                                <p>>&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <div class="built-with">
+                                <p><span>Built with:&nbsp;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex culpa quasi a quibusdam. Iusto rerum sint pariatur quaerat? Praesentium magni, veniam eveniet impedit molestias eum exercitationem ipsa labore. Nam, modi.</p>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <img src="https://dvlpr.pro/macbook.png" alt="OneCrm image">
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item fourth-project">
+                    <div class="project-wrapper">
+                        <div class="left-content">
+                            <img src="https://dvlpr.pro/macbook.png" alt="OneCrm image">
+                        </div>
+                        <div class="right-content">
+                            <div class="title">
+                                <h5>Viewwer.com</h5>
+                            </div>
+                            <div class="description">
+                                <p>>&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <div class="built-with">
+                                <p><span>Built with:&nbsp;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex culpa quasi a quibusdam. Iusto rerum sint pariatur quaerat? Praesentium magni, veniam eveniet impedit molestias eum exercitationem ipsa labore. Nam, modi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item fifth-project">
+                    <div class="project-wrapper">
+                        <div class="left-content">
+                            <div class="title">
+                                <h5>Has'Nou Account</h5>
+                            </div>
+                            <div class="description">
+                                <p>>&nbsp;Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                            </div>
+                            <div class="built-with">
+                                <p><span>Built with:&nbsp;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex culpa quasi a quibusdam. Iusto rerum sint pariatur quaerat? Praesentium magni, veniam eveniet impedit molestias eum exercitationem ipsa labore. Nam, modi.</p>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <img src="https://dvlpr.pro/macbook.png" alt="OneCrm image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section data-scroll-section="" class="contact section-section" id="contact-section">
+            <div class="content-wrapper">
                 <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-10" class="right-container">
                     <img src="public/images/enveloppe.png" alt="Enveloppe">
                 </div>
@@ -3199,19 +3309,22 @@
                                 class="fab fa-facebook"></i></a>
                         <a href="https://www.linkedin.com/in/hasinaniaina-rakotondrainibe-36617a172/"><i
                                 class="fab fa-linkedin"></i></a>
-                        <div>
-                        </div>
-            </section>
-        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="public/js/locomotive-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-        integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-        integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="public/js/script.js"></script>
+    <!-- </div>  -->
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="public/js/locomotive-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="public/js/script.js"></script>
 
 </html>
