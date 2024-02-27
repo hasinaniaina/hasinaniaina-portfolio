@@ -343,13 +343,14 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	position: relative;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1183px) {
 	.content-holder .about .content-wrapper {
 		justify-content: center;
+		flex-wrap: wrap;
 	}
 }
 
@@ -358,6 +359,12 @@ body {
 	position: relative;
 	z-index: 2;
 }
+
+@media screen and (max-width: 1183px) {
+	.content-holder .about .content-wrapper .title {
+		text-align: center;
+	}
+ }
 
 .content-holder .about .content-wrapper .title h2 {
 	font-size: 54px;
@@ -378,6 +385,7 @@ body {
 .content-holder .about .content-wrapper .title p {
 	color: #c3c3c3;
 }
+
 
 .content-holder .about .content-wrapper .title a {
 	text-decoration: none;
@@ -402,9 +410,10 @@ body {
 	z-index: 2;
 }
 
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 1183px) {
 	.content-holder .about .content-wrapper .about-content {
 		width: 480px;
+		text-align: center;
 	}
 }
 
@@ -665,7 +674,8 @@ body {
 .project-item.third-project .project-wrapper .left-content,
 .project-item.fourth-project .project-wrapper .right-content,
 .project-item.fifth-project .project-wrapper .left-content {
-	width: 320px;
+	width: 224px;
+	text-align: center;
 }
 }
 
@@ -749,11 +759,11 @@ body {
 	.project-item.third-project .project-wrapper .right-content img,
 	.project-item.fourth-project .project-wrapper .left-content img,
 	.project-item.fifth-project .project-wrapper .right-content img {
-		width: 320px;
+		width: 223px;
 	}
 
 	#projects-section #project-item-container .project-item.fifth-project .project-wrapper .right-content img {
-		width: 195px;
+		width: 90px;
 	}
 }
 

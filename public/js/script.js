@@ -114,8 +114,6 @@ function checkActiveClass() {
 }
 
 function animateHeroSection() {
-    var developpeurFullstackSection = document.querySelector('.head-content-container');
-    var ImageRightSection = document.querySelector('.svg-content');
     var menuSection = document.querySelector('#portfolio-menu');
     var menuHolder = document.querySelector('#menu-holder');
 
