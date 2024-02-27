@@ -42,6 +42,7 @@ function launchLocomotive() {
     const triggerContainer = document.querySelector('#project-item-container');
     const projectsSection = gsap.utils.toArray('.project-item');
 
+
     gsap.to(projectsSection, {
         xPercent: -100 * (projectsSection.length - 1),
         scrollTrigger: {
@@ -66,7 +67,7 @@ function handleSectionMenuActive(id, scroll_y) {
     var all_section_limit = {};
     var window_height = window.innerHeight;
 
-    var project_section_width = document.getElementById('projects-section').offsetWidth;
+    var project_section_width = document.querySelector('#project-item-container').offsetWidth;
 
     for (var i = 1; i <= section.length; i++) {
         var section_id = section[i - 1].id;
@@ -81,12 +82,12 @@ function handleSectionMenuActive(id, scroll_y) {
     var menu_actived = checkActiveClass();
 
     var section_height = all_section_limit[id];
-    var bottom_section = (section_height - window_height) - (window_height / 2);
-    var top_section = (id.indexOf("contact") == -1) ? (section_height - (window_height / 2) + project_section_width) : section_height - (window_height / 2) ;
+    var bottom_section = (id.indexOf("contact") == 0) ? ((section_height - window_height) - (window_height / 2) + project_section_width) : (section_height - window_height) - (window_height / 2);
+    var top_section = (id.indexOf("contact") == 0) ? (section_height - (window_height / 2) + project_section_width) : section_height - (window_height / 2) ;
     
     
     
-    if (bottom_section < scroll_y && scroll_y < top_section) {
+    if (scroll_y > bottom_section  && scroll_y < top_section) {
         menu_actived.classList.remove(nav_active_class);
         menu_item.classList.add(nav_active_class);
     }
@@ -115,9 +116,7 @@ function animateHeroSection() {
 
     const timelime = new TimelineMax();
 
-    timelime.fromTo(ImageRightSection, 3, { right: "-100%" }, { right: "0", ease: Power2.easeInOut })
-        .fromTo(developpeurFullstackSection, 1.5, { x: "-100%" }, { x: "0%" })
-        .fromTo(menuSection, 2, { height: "100vh", y: "0%" }, { height: "25vh", y: "70vh" })
+    timelime.fromTo(menuSection, 2, { height: "100vh", y: "0%" }, { height: "25vh", y: "70vh" })
         .fromTo(menuHolder, 1, { y: "200%", opacity: 0 }, { y: "0%", opacity: 1 })
 }
 

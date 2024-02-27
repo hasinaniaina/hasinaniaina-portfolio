@@ -757,6 +757,24 @@ body {
 	}
 }
 
+#projects-section #project-item-container .project-item.first-project .project-wrapper .left-content .see-project,
+.project-item.second-project .project-wrapper .right-content .see-project,
+.project-item.third-project .project-wrapper .left-content .see-project,
+.project-item.fourth-project .project-wrapper .right-content .see-project,
+.project-item.fifth-project .project-wrapper .left-content .see-project {
+	margin-top: 20px;
+}
+
+
+#projects-section #project-item-container .project-item.first-project .project-wrapper .left-content .see-project a,
+.project-item.second-project .project-wrapper .right-content .see-project a,
+.project-item.third-project .project-wrapper .left-content .see-project a,
+.project-item.fourth-project .project-wrapper .right-content .see-project a,
+.project-item.fifth-project .project-wrapper .left-content .see-project a {
+	color: #ff7878;
+    text-decoration: none;
+}
+
 .contact .content-wrapper {
 	display: flex;
 	align-items: center;
