@@ -4,9 +4,14 @@ var section = document.getElementsByTagName("section");
 
 function launchLocomotive() {
     let locoScroll = new LocomotiveScroll({
-        el: document.querySelector('[data-scroll-container]'),
+        el: document.querySelector('#scroll-container'),
         smooth: true,
+        tablet: {
+            breakpoint: 0,
+            smooth: true,
+        },
     });
+
 
 
     gsap.registerPlugin(ScrollTrigger);
@@ -83,11 +88,11 @@ function handleSectionMenuActive(id, scroll_y) {
 
     var section_height = all_section_limit[id];
     var bottom_section = (id.indexOf("contact") == 0) ? ((section_height - window_height) - (window_height / 2) + project_section_width) : (section_height - window_height) - (window_height / 2);
-    var top_section = (id.indexOf("contact") == 0) ? (section_height - (window_height / 2) + project_section_width) : section_height - (window_height / 2) ;
-    
-    
-    
-    if (scroll_y > bottom_section  && scroll_y < top_section) {
+    var top_section = (id.indexOf("contact") == 0) ? (section_height - (window_height / 2) + project_section_width) : section_height - (window_height / 2);
+
+
+
+    if (scroll_y > bottom_section && scroll_y < top_section) {
         menu_actived.classList.remove(nav_active_class);
         menu_item.classList.add(nav_active_class);
     }
