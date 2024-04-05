@@ -22,7 +22,6 @@ function launchLocomotive() {
 
         if (els) {
             for (let el in els) {
-                console.log(els[el]['section']['el'])
                 var id = els[el]['section']['el'].id;
                 handleSectionMenuActive(id, scroll_y);
             }
@@ -119,11 +118,13 @@ function animateHeroSection() {
 
     const timelime = new TimelineMax();
 
+    
     timelime.fromTo(menuSection, 2, { height: "100vh", y: "0%" }, { height: "25vh", y: "70vh" })
         .fromTo(menuHolder, 1, { y: "200%", opacity: 0 }, { y: "0%", opacity: 1 })
 }
 
 
-
-launchLocomotive();
-animateHeroSection();
+document.addEventListener("DOMContentLoaded", () => {
+    launchLocomotive();
+    animateHeroSection();
+});
