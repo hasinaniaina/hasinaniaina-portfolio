@@ -22,6 +22,7 @@ function launchLocomotive() {
 
         if (els) {
             for (let el in els) {
+                console.log(els[el]['section']['el'])
                 var id = els[el]['section']['el'].id;
                 handleSectionMenuActive(id, scroll_y);
             }
@@ -29,7 +30,6 @@ function launchLocomotive() {
 
         ScrollTrigger.update();
     });
-
 
     ScrollTrigger.scrollerProxy("#scroll-container", {
         scrollTop(value) {
